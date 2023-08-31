@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&family=Rubik+Mono+One&display=swap');
+
+
+
+
 
 
 :root{
@@ -6,7 +10,7 @@
 }
 
 
-/* body::-webkit-scrollbar {
+ body::-webkit-scrollbar {
 	width: 12px;
 	background-color: #000000;
 }
@@ -19,12 +23,13 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: rgba(170, 170, 170, 0.383);
-} */
+} 
 
 html, body{
 width: 100%;
-overflow:hidden ;
-background-color: #000000;
+height: 175%;
+overflow:hiddn ;
+background: linear-gradient(black 40%, #6D0D92 70%);
 scroll-behavior: smooth;
 }
 
@@ -58,13 +63,13 @@ footer{
  bottom: 0;
  left: 0;
  right: 0;
-     position: relative;
+ margin: 1pc;
 }
 a, .fact{
   position: sticky;
   z-index: 1;
   user-select: none;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
 }
 .fact{
     opacity: 30%;
@@ -73,11 +78,10 @@ a, .fact{
 
 .social{
   position: fixe;
-
-  background:rgba(13, 13, 13, 0.11);
+  background:rgba(251, 251, 251, 0.11);
   display: inline-table;
   width: calc(var(--sizeindex) * 10);
-  border-radius: calc(var(--sizeindex) * 2);
+  border-radius: calc(var(--sizeindex) * 1);
 }
 br{
     user-select: none;
@@ -86,5 +90,18 @@ br{
   margin: 0;
   padding: 0; 
   box-sizing: border-box;
+  cursor: grabbing;
 }
-
+p{
+  color: rgb(206, 107, 239);
+  font-family: 'Rubik Mono One', sans-serif;
+  opacity: 100%;
+  font-size: calc(var(--sizeindex) * 1.3);
+  text-align: center;    
+  position: absolute; 
+  bottom: -170%;
+  width: 900px;
+  left: 25%;
+  right: 0;
+  user-select: none;
+}
