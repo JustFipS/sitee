@@ -15,35 +15,34 @@
 body::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
-	background-color: #080808;
+	background-color: #ee000000;
 }
 body::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: rgba(170, 170, 170, 0.383);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+	background-color: rgba(191, 0, 255, 0.173);
 } 
 html, body{
 width: 100%;
-height: 175%;
-overflow:hiddn ;
-background: linear-gradient(black 40%, #6D0D92 60%);
+height: 185%;
+overflow:hiden ;
+background: linear-gradient(black 30%, #6D0D92 70%);
 scroll-behavior: smooth;
 }
 
 h2{
  color: rgb(237, 235, 235);
- text-shadow: #9c0bd1 4px 4px 4px;
+ text-shadow: #9c0bd1 25px 3px 12px;
  font-family: 'Sedgwick Ave Display', cursive;
  opacity: 75%;
  font-size: calc(var(--sizeindex) * 6);
- height: 45%;
- margin: 0;
  position: absolute;
- top: 35%;
- margin-left: 17%;             
+ top: 35%;          
  z-index: 1;
  user-select: none;
-
+ left: 0;
+ right: 0;
+ text-align: center;
 }
 footer{
  position: sticky;
@@ -53,13 +52,13 @@ footer{
  bottom: 0;
  left: 0;
  right: 0;
- margin: 1pc;
+ margin: calc(var(--sizeindex) * 1);
 }
 a, .fact{
   font-family: 'Sedgwick Ave Display', cursive;
   position: sticky;
   z-index: 1;
-  font-size: 20px;
+  font-size: calc(var(--sizeindex) * 0.7);
   user-select: none;
   color: rgb(255, 255, 255);
 }
@@ -79,16 +78,15 @@ br{
 }
 p{
   color: rgb(176, 7, 176);
-  text-shadow: hsla(0, 5%, 83%, 0.553) 4px 1px 4px;
+  text-shadow: hsla(292, 100%, 50%, 0.479) 10px 2px 4px;
   font-family: 'Rubik Mono One', sans-serif;
-  opacity: 100%;
   font-size: calc(var(--sizeindex) * 1.3);
   text-align: center;    
   position: absolute; 
-  bottom: -168%;
-  width: 900px;
-  left: 28%;
+  bottom: calc(var(--sizeindex) * -68);
+  left: 0;
   right: 0;
+  text-align: center;
   user-select: none;
   pointer-events: none;
 }
